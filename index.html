@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Transparent Image Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Generate a transparent image of your name</h1>
+    </header>
+
+    <main>
+      <div class="input-container">
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <div class="font-selection">
+          <label for="fontSelect"
+            ><span class="nowrap">Choose Font: </span></label
+          >
+          <select id="fontSelect">
+            <option value="Roboto">Roboto</option>
+            <option value="Road Rage">Road Rage</option>
+            <option value="Bungee Spice">Bungee Spice</option>
+          </select>
+        </div>
+        <span class="validationSpan" id="validationMessage"></span>
+        <button onclick="generateImage()">Generate Image</button>
+      </div>
+
+      <div id="resultImageContainer" style="display: none">
+        <img id="resultImage" alt="Generated Image" />
+        <br />
+        <a id="downloadLink" href="#" download="transparent_image.png"
+          >Download Image</a
+        >
+      </div>
+    </main>
+
+    <footer class="footer">Proudly Made By Bipin</footer>
+  </body>
+</html>
